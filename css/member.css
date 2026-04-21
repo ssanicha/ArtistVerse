@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+.navbar input {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.navbar a {
+    color: beige;
+    text-decoration: none;
+    margin: 15px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+/* ตัวคั่น / */
+.menu a:not(:last-child)::after {
+    content: " / ";
+    margin-left: 10px;
+    color: rgba(255,255,255,0.5);
+}
+.artist-grid{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+.artist-grid a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.artist-grid img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.artist-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* artist */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f1f3d, #1e3c72);
+    color: white;
+    justify-content: center;
+}
+
+/* layout หลัก */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    margin: auto;
+}
+
+/* รูป */
+.container img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* กล่องข้อมูล */
+.info {
+    max-width: 400px;
+    text-align: left;
+}
+
+/* ชื่อ */
+.info h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* ข้อมูลรอง */
+.info p {
+    font-size: 16px;
+    margin: 8px 0;
+    opacity: 0.9;
+}
+.artist-detail img{
+    width: 500px;
+    height: 700px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img {
+        width: 80%;
+        height: auto;
+    }
+}

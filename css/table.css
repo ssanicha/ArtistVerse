@@ -1,0 +1,82 @@
+table {
+    background-color: rgb(148, 227, 230);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+th{
+    background-color: #222;
+    color: rgb(95, 171, 211);
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+td{
+    padding: 12px;
+    border-bottom: 1px solid #2733d8;
+}
+tr:hover {
+    background-color: rgb(242, 181, 239);
+    transition: 0.3s;
+}
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+button {
+    color: rgb(215, 19, 134);
+    padding: 4px 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(1) {
+    background-color: #9c2ec0;
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: #e6d62a;
+    color: white;
+}
+
+button:last-child {
+    background-color: #3498db;
+    color: white;
+    margin-top: 5px;
+}
+
+/* ส่วนรายการที่ซื้อ */
+#cart {
+    background-color: white;
+    padding: 20px;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#cart li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+/* ยอดรวม */
+#summary {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2c3c;
+}
+/* ปุ่มล้าง */
+button[onclick="clearCart()"] {
+    background-color: #e04691;
+    color: white;
+    margin-top: 15px;
+    
+}
+@media (max-width: 600px) {
+    .link-btn {
+        width: 80%;
+        padding: 16px 0;
+    }
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\..\css\product.css">
+    <title>MERCHANDISE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product-con">
+            <div class="product-item" data-id="1" data-name="gorn The 1st Album From the room where I stay"
+                data-price="890">
+                <div class="product-img">
+                    <img src="/../img/pd1.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>gorn The 1st Album From the room where I stay</h4>
+                    Set Details <br>
+                    1.BOX (SIZE 150 x 220 x 15 mm) <br>
+                    2.SELFIE CARD (3 ใบ) <br>
+                    3.QR CARD (1 ใบ) <br>
+                    4.POSTCARD (3 ใบ) <br>
+                    5.POSTER (1 ใบ) <br>
+                    6.PHOTOBOOK (1 เล่ม / 80 หน้า) <br>
+                    7.COMPACT DISC (1 แผ่น / 6 TRACKS) <br>
+                    8.CD COVER (1 ซอง)
+                </div>
+                <div class="product-price">
+                    <div class="product-left">890 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!--ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product-item" data-id="2" data-name="gorn - CAP [gorn's ROOM CONCERT]" data-price="499">
+                <div class="product-img">
+                    <img src="/../img/pd2.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>gorn - CAP [gorn's ROOM CONCERT]</h4>
+                    Size : Head 60 cm x Brim 7 cm <br>
+                    หมายเหตุ: <br>
+                    1. หลังยืนยันคำสั่งซื้อแล้วจะไม่สามารถยกเลิกหรือคืนเงินหรือเปลี่ยนแปลงที่อยู่ได้ <br>
+                    2. สินค้าชิ้นอื่น ๆ ที่อยู่ระหว่างการ Pre-order นั้น
+                    บริษัทจะทำการจัดส่งให้ตามลำดับคำสั่งซื้อในภายหลัง <br>
+                    3. สินค้าจะเริ่มจัดส่งตามลำดับคำสั่งซื้อตั้งแต่วันที่ 5 กุมภาพันธ์ 2569 เป็นต้นไป <br>
+                </div>
+                <div class="product-price">
+                    <div class="product-left">499 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!-- ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="product-item" data-id="3" data-name="gorn - babytee [gorn's ROOM CONCERT]" data-price="590"
+                data-stock="7">
+                <div class="product-img">
+                    <img src="/../img/pd3.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>gorn - babytee [gorn's ROOM CONCERT]</h4>
+                    Size : Length 23-24 in / Bust 40 in / Fitted neckline <br>
+                    หมายเหตุ: <br>
+                    1. หลังยืนยันคำสั่งซื้อแล้วจะไม่สามารถยกเลิกหรือคืนเงินหรือเปลี่ยนแปลงที่อยู่ได้ <br>
+                    2. สินค้าชิ้นอื่น ๆ ที่อยู่ระหว่างการ Pre-order
+                    นั้นบริษัทจะทำการจัดส่งให้ตามลำดับคำสั่งซื้อในภายหลัง <br>
+                    3. สินค้าจะเริ่มจัดส่งตามลำดับคำสั่งซื้อตั้งแต่วันที่ 5 กุมภาพันธ์ 2569 เป็นต้นไป <br>
+                </div>
+                <div class="product-price">
+                    <div class="product-left">590 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!-- ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product-item" data-id="4" data-name="gorn's ROOM [gorn's ROOM CONCERT]" data-price="490">
+                <div class="product-img">
+                    <img src="/../img/pd4.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>gorn's ROOM [gorn's ROOM CONCERT]</h4>
+                    Size : W 8.3 cm x L 8.95 cm x H 8.3 cm<br>
+                    หมายเหตุ: <br>
+                    1. หลังยืนยันคำสั่งซื้อแล้วจะไม่สามารถยกเลิก คืนเงิน หรือเปลี่ยนแปลงที่อยู่ได้ <br>
+                    2. สินค้าชิ้นอื่น ๆ ที่อยู่ระหว่างการ Pre-order
+                    นั้นบริษัทจะทำการจัดส่งให้ตามลำดับคำสั่งซื้อในภายหลัง <br>
+                    3. สินค้าจะเริ่มจัดส่งตามลำดับคำสั่งซื้อตั้งแต่วันที่ 5 กุมภาพันธ์ 2569 เป็นต้นไป <br>
+                </div>
+                <div class="product-price">
+                    <div class="product-left">490 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!--ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product-item" data-id="5" data-name="PROXIE Band T-Shirt (I'm Good Ver.)" data-price="490">
+                <div class="product-img">
+                    <img src="/../img/pd5.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>PROXIE Band T-Shirt (I'm Good Ver.)</h4>
+                    เสื้อ Concept PROXIE Band เพลง ‘ดีอยู่แล้วที่ต้องลา (I'm Good) <br>
+                    รายละเอียด <br>
+                    สี : สีดำ <br>
+                    Size : ขนาดรอบอก 44”<br>
+                    หมายเหตุ: <br>
+                    1. สินค้าจะเริ่มจัดส่งตามลำดับคำสั่งซื้อตั้งแต่วันที่ 5 กุมภาพันธ์ 2569 เป็นต้นไป <br>
+                </div>
+                <div class="product-price">
+                    <div class="product-left">490 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+
+                    <!--ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="product-item" data-id="6" data-name="BUBBLEGORN Ver." data-price="490">
+                <div class="product-img">
+                    <img src="/../img/pd6.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>BUBBLEGORN Ver.</h4>
+                    Set Details <br>
+                    - PROXIECOT ขนาด 10 ซม. 1 EA <br>
+                    - PROXIECOT Passport 1 EA <br>
+                    - PROXIECOT Sticker (Designed by PROXIE) 1 EA <br>
+                    - PROXIECOT Box 1 EA <br>
+                    (ด้านหลัง PROXIECOT Box จะมี QR Code สำหรับสแกนเพื่อรับชมความเป็นมาของ PROXIECOT แต่ละตัว)
+                </div>
+                <div class="product-price">
+                    <div class="product-left">490 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!-- ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="product-item" data-id="7" data-name="VISKEY Ver." data-price="490">
+                <div class="product-img">
+                    <img src="/../img/pd7.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>VISKEY Ver.</h4>
+                    Set Details <br>
+                    - PROXIECOT ขนาด 10 ซม. 1 EA <br>
+                    - PROXIECOT Passport 1 EA <br>
+                    - PROXIECOT Sticker (Designed by PROXIE) 1 EA <br>
+                    - PROXIECOT Box 1 EA <br>
+                    (ด้านหลัง PROXIECOT Box จะมี QR Code สำหรับสแกนเพื่อรับชมความเป็นมาของ PROXIECOT แต่ละตัว)
+                </div>
+                <div class="product-price">
+                    <div class="product-left">490 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!-- ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product-item" data-id="8" data-name="OSKY Ver." data-price="490">
+                <div class="product-img">
+                    <img src="/../img/pd8.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>OSKY Ver.</h4>
+                    Set Details <br>
+                    - PROXIECOT ขนาด 10 ซม. 1 EA <br>
+                    - PROXIECOT Passport 1 EA <br>
+                    - PROXIECOT Sticker (Designed by PROXIE) 1 EA <br>
+                    - PROXIECOT Box 1 EA <br>
+                    (ด้านหลัง PROXIECOT Box จะมี QR Code สำหรับสแกนเพื่อรับชมความเป็นมาของ PROXIECOT แต่ละตัว)
+                </div>
+                <div class="product-price">
+                    <div class="product-left">490 bath</div>
+                    
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!-- ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="product-item" data-id="9"
+                data-name="(CALLSIGN) PROXIE Official Merchandise Solo Project Edition - Gorn Ver." data-price="499">
+                <div class="product-img">
+                    <img src="/../img/pd12.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>(CALLSIGN) PROXIE Official Merchandise Solo Project Edition (Limited Edition)
+                        - Gorn Ver.</h4>
+                    (รับสิทธิ์ Callsign ของ Gorn)
+                    Set Detail <br>
+                    1. Selfie Card แบบสุ่ม 2 ใบ (จากทั้งหมด 4 ใบ) <br>
+                    2. Concept Photo Card 1 เซ็ต (6 ใบ) <br>
+                    3. Postcard 2 ชิ้น <br>
+                    4. Sticker 2 ชิ้น <br>
+                    5. ตุ๊กตากระดาษ 1 ชิ้น
+                </div>
+                <div class="product-price">
+                    <div class="product-left">499 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <!-- ปุ่มสั่ง -->
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product-item" data-id="10"
+                data-name="(CALLSIGN) PROXIE Official Merchandise Solo Project Edition - Onglee Ver." data-price="499">
+                <div class="product-img">
+                    <img src="/../img/pd11.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>(CALLSIGN) PROXIE Official Merchandise Solo Project Edition
+                        (Limited Edition) - Onglee Ver.</h4>
+                    (รับสิทธิ์ Callsign ของ Onglee)
+                    Set Detail <br>
+                    1. Selfie Card แบบสุ่ม 2 ใบ (จากทั้งหมด 4 ใบ) <br>
+                    2. Concept Photo Card 1 เซ็ต (6 ใบ) <br>
+                    3. Postcard 2 ชิ้น <br>
+                    4. Sticker 2 ชิ้น <br>
+                    5. ตุ๊กตากระดาษ 1 ชิ้น
+                </div>
+                <div class="product-price">
+                    <div class="product-left">499 bath</div>
+                    <div class="qty-box">
+                        <button onclick="decrease(this)">-</button>
+                        <span class="qty">1</span>
+                        <button onclick="increase(this)">+</button>
+                    </div>
+                    <button onclick="addToCart(this)">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cart-icon" onclick="openCart()">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </div>
+
+            <!-- CART SIDEBAR -->
+            <div id="cartSidebar" class="cart-sidebar">
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+
+                <h3 id="cartTotal">Total: 0 บาท</h3>
+                <button onclick="checkout()">CHECKOUT</button>
+                <button onclick="closeCart()">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let cart = [];  //ใช้เก็บสินค้าในตะกร้า (array)
+        function increase(btn) {
+            let card = btn.closest(".product-item"); // 👈 หา container หลัก
+            let qty = card.querySelector(".qty");
+            qty.innerText = parseInt(qty.innerText) + 1;
+        }
+        // ลดจำนวน
+        function decrease(btn) {
+            let card = btn.closest(".product-item");
+            let qty = card.querySelector(".qty");
+
+            let current = parseInt(qty.innerText);
+
+            if (current > 1) {
+                qty.innerText = current - 1;
+            }
+        }
+        // เพิ่มสินค้าเข้าตะกร้า
+        function addToCart(btn) {
+            let card = btn.closest(".product-item");
+            let product_name = card.querySelector("h4").innerText;
+            let priceText = card.querySelector(".product-left").innerText;
+            let price = parseFloat(priceText);
+            let quantity = parseInt(card.querySelector(".qty").innerText);
+            let id = card.dataset.id;
+
+            let stock = parseInt(card.getAttribute("data-stock"));
+            console.log("STOCK:", stock);
+             if (quantity > stock) {
+                alert("สินค้าไม่เพียงพอ");
+                return;
+            }
+            let item = {
+                id,
+                product_name,
+                price,
+                qty: quantity,
+                stock: stock
+            };
+            cart.push(item);
+            renderCart();
+            updateCartCount();
+            alert("เพิ่มลงตะกร้าแล้ว");
+        }
+        // แสดงรายการสินค้าในตะกร้า
+        // คำนวณราคา
+        function renderCart() {
+            let cartDiv = document.getElementById("cartItems");
+            cartDiv.innerHTML = "";
+            let subtotal = 0;
+            let totalDiscount = 0;
+            cart.forEach((item, index) => {
+                let itemTotal = item.price * item.qty;
+                let discount = 0;
+                if (item.qty >= 5) {
+                    discount = itemTotal * 0.1;
+                }
+                subtotal += itemTotal;
+                totalDiscount += discount;
+                let div = document.createElement("div");
+                div.innerHTML = `
+            <b>${item.product_name}</b><br>
+            <button onclick="decreaseCart(${index})">-</button>
+            ${item.qty}
+            <button onclick="increaseCart(${index})">+</button>
+            <br>ราคา: ${itemTotal} บาท
+            ${discount > 0 ? `<br style="color:red;">ลด 10%: -${discount.toFixed(2)} บาท` : ""}
+            <hr>
+            `;
+                cartDiv.appendChild(div);
+            });
+            //  คำนวณรวมทั้งออเดอร์
+            let afterDiscount = subtotal - totalDiscount;
+            let vat = afterDiscount * 0.07;
+            let finalTotal = afterDiscount + vat;
+            document.getElementById("cartTotal").innerText =
+                `Subtotal: ${subtotal.toFixed(2)} บาท
+            Discount: -${totalDiscount.toFixed(2)} บาท
+            VAT 7%: +${vat.toFixed(2)} บาท
+            Total: ${finalTotal.toFixed(2)} บาท`;
+        }
+        // เปิด/ปิด sidebar
+        function openCart() {
+            document.getElementById("cartSidebar").classList.add("active");
+        }
+        function closeCart() {
+            document.getElementById("cartSidebar").classList.remove("active");
+        }
+        // แสดงจำนวนสินค้า (นับจำนวนรายการ)
+        function updateCartCount() {
+            document.getElementById("cartCount").innerText = cart.length;
+        }
+        // เช็ค cart ว่างไหม
+        // ส่งข้อมูลไป backend (/checkout)
+        // รอ response
+        function checkout() {
+            if (cart.length === 0) {
+                alert("ไม่มีสินค้า");
+                return;
+            }
+            fetch("http://localhost:3000/checkout", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(cart)
+            })
+                .then(res => {
+                    if (!res.ok) throw new Error("Server error");
+                    return res.json();
+                })
+                .then(data => {
+                    console.log("DATA:", data);
+                    if (data.status === "out_of_stock") {
+                        alert("❌ สินค้าหมดแล้ว");
+                        return;
+                    } else {
+                        alert("สั่งซื้อสำเร็จ 🎉");
+                        cart = [];
+                        renderCart();
+                        updateCartCount();
+                        closeCart();
+                    }
+                })
+                .catch(err => {
+                    alert("เกิดข้อผิดพลาด");
+                    console.log(err);
+                });
+        }
+        // เช็ค stock ก่อนเพิ่ม
+        function increaseCart(index) {
+            let item = cart[index];
+
+            if (item.qty >= item.stock) {
+                alert("❌ สินค้าเหลือไม่พอแล้ว");
+                return;
+            }
+            cart[index].qty++;
+            renderCart();
+        }
+        // ลด qty แต่ไม่ต่ำกว่า 1
+        function decreaseCart(index) {
+
+            if (cart[index].qty > 1) {
+                cart[index].qty--;
+            } else {
+                cart.splice(index, 1); // ลบสินค้า
+            }
+            renderCart();
+            updateCartCount();
+        }
+        // เพิ่ม qty +1
+        function increase(btn) {
+            let box = btn.parentElement;
+            let qtySpan = box.querySelector(".qty");
+            let current = parseInt(qtySpan.innerText);
+            let stock = parseInt(box.dataset.stock); 
+            if (current >= stock) {
+                alert("❌ ของหมดแล้ว");
+                return;
+            }
+            qtySpan.innerText = current + 1;
+        }
+    </script>
+</body>
+</html>

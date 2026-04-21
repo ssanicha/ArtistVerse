@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+form {
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 15px;
+    width: 420px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Title (ถ้าอยากเพิ่ม) */
+form::before {
+    content: "สมัครสมาชิก";
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label */
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus */
+input:focus {
+    border-color: #667eea;
+    /* box-shadow: 0 0 5px rgba(102,126,234,0.5); */
+}
+
+
+/* ปุ่ม */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #e4568b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+/* * สีแดง */
+span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive มือถือ */
+@media (max-width: 500px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+
+    #date, #age {
+        width: 100%;
+        margin-right: 0;
+    }
+}

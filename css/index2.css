@@ -1,0 +1,334 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container {
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+nav {
+    padding: 26px;
+    /* background-color: #e2722d; */
+    background-color: #65a3ef;
+}
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+}
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2b25cb;
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+.menu li a {
+    position: relative;      /* ตัวอ้างอิง */
+    display: inline-block; 
+    margin: 0 1rem;
+    color: #2b25cb;
+    text-decoration: none;
+    align-items: center;
+
+}
+ .menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background-color: rgb(210, 250, 140);
+    transition: width 0.3s ease;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.maincontent {
+    background-color: #D6F7FF;
+}
+
+.maincontent-con {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+    background: repeating-linear-gradient(90deg,
+            #eaf4f8,
+            #eaf4f8 25px,
+            #d8ebf3 25px,
+            #d8ebf3 50px);
+}
+.maincontent-info {
+    width: 100%;
+    padding: 2rem;
+
+}
+.maincontent-info h3 {
+    font-size: 2rem;
+}
+.maincontent-info p {
+    margin: 1rem 0;
+    padding: 10px;
+}
+.maincontent-info .maincontent-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color:  #569be4;
+    color: white;
+    border-radius:  6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.maincontent-img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+.maincontent-img img {
+    width: 100%;
+    height: 700px;
+    height: inherit;
+    object-fit: cover;
+}
+/* section 2 */
+.content {
+    width: 100%;
+    background-color: #eaeff8;
+    /* height: 900px; */
+}
+.content-con {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1.5rem;
+    text-align: center;
+    /* aspect-ratio: 1/1; */
+    padding: 4rem;
+}
+.content-item img {
+    width: 220px;
+    height: 300px;
+}
+.content-item h4 {
+    margin-top: 1rem;
+    text-align: center;
+}
+.content-item p {
+    margin: 1rem 0;
+}
+.link-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color:  #5985de;
+    color: #5d7b3d;
+    border-radius:  6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.link {
+    text-align: center;
+    padding: 5px 0 10px 0;
+    margin-top: -27px;
+}
+
+.link-btn:hover {
+    background-color: #5985de;
+    transform: translateY(-2px);
+}
+.content-item a {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #90b2f0;
+    color: #0f0788;
+    border-radius:  6px;
+    text-decoration: none;
+    font-size: 16px;
+    /* font-weight: bold; */
+    transition: 0.3s;
+}
+.section-divider {
+    background-color: #eaeff8;
+    /* พื้นครีม */
+    border-top: 2px solid #2c1892;
+    border-bottom: 2px solid #2c1892;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.divider-track {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #2c1892;
+    font-weight: 500;
+}
+
+/* section become to proxie */
+.content-1 {
+    background-color: #eaeff8;
+    height: 700px;
+}
+.container-1 {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0;
+}
+.maincontent-his {
+    display: grid;
+    grid-template-columns: 1.5fr 1.3fr;
+    gap: 60px;
+    align-items: center;
+}
+.content-title-his h3 {
+    font-size: 60px;
+    color: #2717d5;
+    margin-bottom: 1rem;
+}
+.content-img-his img {
+    width: 100%;
+    height: 700px;
+    justify-items: left;
+
+}
+.content-his {
+    padding: 140px 10px;
+}
+.greatvibes -font {
+    font-family: "Great Vibes", cursive;
+}
+.content-his p {
+    text-align: justify;
+    justify-content: center;
+}
+/* footer */
+.footer-top {
+    margin-top: 0;
+    padding: 3rem;
+    background-color: #d3def4;
+    color:#000000;
+;
+}
+
+.footer-top-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.footer-top-item-con {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.footer-top-item-con .date {
+    background-color: #293da5;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.footer-top-con:nth-child(2) h4,
+.footer-top-con:nth-child(3) h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    background-color: #192b6d;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-con {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .menu li {
+        margin: 0.5rem 0;
+    }
+    .product-con{
+        grid-template-columns: 1fr;
+    }
+    /* ตัวหนังสือ */
+    h1{
+        font-size: 1.8rem;
+    }
+    .logo a{
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 768px){
+
+    /* แก้ height ตายตัว */
+    .content,
+    .content-1{
+        height: auto;
+        padding: 3rem 1rem;
+    }
+    .container-1{
+        height: auto;
+    }
+    /* section 1 */
+    .maincontent-img img{
+        height: auto;
+    }
+    /* section 2 */
+    .content-con{
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+    .content-item img{
+        width: 100%;
+        height: auto;
+    }
+    .section-divider{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* become to proxie */
+    .maincontent-his{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .content-img-his img{
+        height: auto;
+    }
+    .content-title-his h3{
+        font-size: 2rem;
+    }
+    .content-his{
+        padding: 1rem;
+    }
+    /* footer */
+    .footer-top-con{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+/* กัน scrollbar แนวนอน */
+body{
+    overflow-x: hidden;
+}

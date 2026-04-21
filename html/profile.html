@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/../css/profile.css">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>PROFILE</title>
+</head>
+
+<body>
+    <div class="profile-container">
+
+        <div class="profile-card">
+            <img src="/../img/naraProf.jpg" alt="" class="profile-img">
+            <!-- <img id="profilePic" src="/project/img/naraProf.jpg" class="profile-img"> -->
+            <h2 id="username"></h2>
+            <p id="email"></p>
+        </div>
+        <div class="order-history">
+            <h3>Order History</h3>
+            <div id="orderList"></div>
+        </div>
+        <div class="button-container">
+            <button onclick="clearOrders()"class="clear-btn">🗑 Clear</button>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+        <!-- <button onclick="clearOrders()" class="clear-btn">
+            🗑️ Clear History
+        </button>
+        <button onclick="logout()" class="logout-btn">LOGOUT</button> -->
+    </div>
+    <script>
+        const user = JSON.parse(localStorage.getItem("user"));
+        if (!user) {
+            window.location.replace("into.html"); // เด้งไป login
+        }
+        const img = document.getElementById("profilePic");
+        document.getElementById("username").innerText = user.username;
+        document.getElementById("email").innerText = user.email;
+        console.log(user);
+        // แสดงประวัติการซื้อที่หน้าโปรไฟล์
+        fetch("http://localhost:3000/orders")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                let orderList = document.getElementById("orderList");
+                orderList.innerHTML = "";
+                data.sort((a, b) => b.id - a.id);
+                data.forEach(item => {
+                    let div = document.createElement("div");
+                    div.classList.add("order-item");
+                    let date = new Date(item.created_at);
+                    let thaiTime = date.toLocaleString("th-TH", {
+                        timeZone: "Asia/Bangkok",
+                        dateStyle: "medium",
+                        timeStyle: "short"
+                    });
+                    div.innerHTML = `
+                <div>
+                    <b>${item.product_name}</b><br>
+                    จำนวน: ${item.quantity} <br>
+                    ราคา: ${item.total} บาท <br>
+                    <small>${thaiTime}</small>
+                </div>
+                `;
+                    orderList.appendChild(div);
+                });
+
+            });
+        // ล้างค่าประวัติการซื้อ
+        function clearOrders() {
+            document.getElementById("orderList").innerHTML = "";
+        }
+        // กดออกจากระบบ
+        function logout() {
+            localStorage.removeItem("user"); //  ลบ user ออกจากเครื่อง
+
+            alert("ออกจากระบบแล้ว");
+
+            window.location.replace("../html/into.html"); // กลับไปหน้า login
+        }
+        // ตั้งค่ารูปโปรไฟล์เป็น default
+        if (user && user.img) {
+            img.src = user.img;
+        } else {
+            img.src = "default.jpg";
+        }
+    </script>
+</body>
+
+</html>

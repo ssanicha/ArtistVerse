@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTENT</title>
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../javascript/conetntJS.js">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <a href="/index2.html">HOME</a>
+            <a href="../html/content.html">CONTENT</a>
+            <a href="../html/product.html">SHOP</a>
+            <a href="../html/member.html">ARTIST</a>
+        </div>
+        <input type="text" placeholder="Search......">
+    </div>
+    <div class="container">
+        <div class="main">
+            <iframe id="videoPlayer" src="https://www.youtube.com/embed/b4sLppBcZz8" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="right">
+
+            <div class="tabs">
+                <button onclick="showTab('music')" class="tab active">MUSIC</button>
+                <button onclick="showTab('variety')" class="tab">VARIETY</button>
+            </div>
+
+            <div id="music" class="tab-content active">
+                <div class="item active" onclick="changeVideo('uhTrQ1NopkM', this)">
+                    <img src="/../img/tf.jpg">
+                    <p>Traffic - Proxie</p>
+                </div>
+                <div class="item" onclick="changeVideo('DScW0yn0Nko', this)">
+                    <img src="../img/lq.png">
+                    <p>พรุ่งนี้ค่อยเลิกได้ไหม - Last Request</p>
+                </div>
+                <div class="item" onclick="changeVideo('aC_efr-OgKg', this)">
+                    <img src="/../img/prettygirl.jpg">
+                    <p>Pretty Girl - KimGun</p>
+                </div>
+            </div>
+            <div id="variety" class="tab-content">
+                
+                <div class="item" onclick="changeVideo('lwPYtYL7KsQ', this)">
+                    <img src="../img/thum1.jpg" alt="">
+                    <p>[PROXIE Arcade EP.4] PROXIE Mini Lympic</p>
+                </div>
+                <div class="item" onclick="changeVideo('vVUJLAzTHhk', this)">
+                    <img src="../img/thum2.jpg" alt="">
+                    <p>[PROXIE Arcade SS2] EP.5 ยิมนาสตี้ Everywhere!</p>
+                </div>
+                <div class="item" onclick="changeVideo('Qs7EzdtMF2s', this)">
+                    <img src="../img/thum4.jpg" alt="">
+                    <p>[PROXIE Arcade Special] ตัวร้ายในหมู่บ้านสุขสันต์สร้างเสกสม…</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../javascript/conetntJS.js"></script>
+</html>

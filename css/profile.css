@@ -1,0 +1,60 @@
+.profile-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    background: #f4f8ff;
+}
+.profile-card {
+    width: 250px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.profile-img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.order-history {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.order-history h3 {
+    color: #1e3c72;
+}
+.order-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+button {
+    display: inline-block;
+    width: auto;
+    margin: 4px;
+    padding: 1px 5px;   /* 🔥 ลดขนาด */
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ปุ่ม Clear */
+.clear-btn {
+    background-color: #f3f3f3;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* ปุ่ม Logout */
+.logout-btn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+/* hover ให้ดูมีลูกเล่น */
+button:hover {
+    opacity: 0.8;
+}

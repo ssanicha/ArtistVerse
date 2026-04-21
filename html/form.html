@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\form.css">
+    <link rel="stylesheet" href="..\backend\server1.js">
+    <!-- <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../backend/server1.js"> -->
+    <title>REGISTER</title>
+</head>
+
+<body>
+    <form onsubmit="register(event)">
+        <label for="name">First Name<span style="color: red;">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+        <label for="surname">Last Name<span style="color: red;">*</span></label>
+        <input type="text" id="surname" name="surname" placeholder="Enter Your Last Name">
+
+        <label for="email">Email<span style="color: red;">*</span></label>
+        <input type="email" name="email" id="email" placeholder="Enter email address">
+
+        <label for="password">Password<span style="color: red;">*</span></label>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+
+        <label for="confirmpass">Confirm Password<span style="color: red;">*</span></label>
+        <input type="password" name="confirmpass" id="confirmpass" required>
+
+        <button type="submit">Register</button>
+
+    </form>
+    <p id="errorMsg" style="color:red;"></p>    
+    <script>
+        function register(event) {
+            event.preventDefault(); // กันรีเฟรชหน้า
+            const name = document.getElementById("name").value;
+            const surname = document.getElementById("surname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirm = document.getElementById("confirmpass").value;
+            const error = document.getElementById("errorMsg");
+            // validate
+            if (!name || !surname || !email || !password) {
+                error.innerText = "กรอกข้อมูลให้ครบ";
+                return;
+            }
+            if (password !== confirm) {
+                error.innerText = "รหัสผ่านไม่ตรงกัน";
+                return;
+            }
+            error.innerText = "";
+            fetch("http://localhost:3000/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    username: name + " " + surname, // รวมชื่อ
+                    email,
+                    password
+                })
+            })
+                .then(res => res.json())
+                .then(data => {
+
+                    if (data.status === "ok") {
+                        alert("สมัครสำเร็จ 🎉");
+                        window.location.href = "into.html";
+                    } else {
+                        error.innerText = "สมัครไม่สำเร็จ";
+                    }
+
+                });
+        }
+    </script>
+</body>
+
+</html>
